@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.ElevatorTest.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\MOS_LENOVO_REGINA\Documents\CatlikeTurtorials\ElevatorTest\.idea\.idea.ElevatorTest\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

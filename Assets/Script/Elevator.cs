@@ -16,20 +16,22 @@ public class Elevator : MovmentObject
     private Vector2 m_startPoint => new Vector2(transform.position.x, m_startPosition);
 
     private Vector2 m_endPoint => new Vector2(transform.position.x, m_endPosition);
-   
+    [SerializeField] private UIController m_uiController;
     
 
     public void ExecuteCoroutine(int floorId, float endPosition)
     {
-        Debug .Log(m_isMove);
-        if (m_isMove) return;
-        Debug.Log(floorId + " " + m_currentFloorId);
+        if (m_isMove)
+        {
+            m_uiController.OpenUi(m_isMove);
+            return;
+        }
 
         if(floorId == m_currentFloorId) return; 
         
         m_currentFloorId = floorId;
 
-        if (floorId > m_currentFloorId)
+        if (floorId < m_currentFloorId)
         {
             m_moveDirection = true;
 

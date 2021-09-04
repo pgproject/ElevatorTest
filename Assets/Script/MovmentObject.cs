@@ -11,5 +11,4 @@ public abstract class MovmentObject : MonoBehaviour
     public bool m_isMove;
     protected bool m_moveDirection;
     protected abstract IEnumerator Move();
-
 }

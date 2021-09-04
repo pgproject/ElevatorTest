@@ -1,18 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ControllElevatorInsiade : MonoBehaviour
+namespace Script
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ControllElevatorInsiade : MonoBehaviour, IAction
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField] private UIController m_uiController;
+        public void Execute()
+        {
+            m_uiController.OpenUi(false);
+        }
     }
 }
